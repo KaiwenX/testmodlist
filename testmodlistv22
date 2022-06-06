@@ -1,0 +1,143 @@
+--Homolife#1525 was here
+--discord.gg/encrypt
+--pretty nice script no kizzy
+--If you find this and tell ur fellow friends that you "leaked" this data base, idgaf, its just prem dummeh ;) love u </3
+
+local adminsez = {
+	300141009,
+	2721170080,
+	920389780,
+	63448449,
+	2809412520,
+	414080538,
+	1535126103,
+	116679586,
+	270004839,
+}
+
+local serverbooster = {
+	1626752226,
+	73506753,
+	3234663393,
+}
+
+local moderators = {
+	833678432,
+	1687018961,
+	2043060303,
+	2868887938,
+	273055042,
+}
+
+local premID = {
+	2809416873,
+}
+
+local shitter = {
+	292583175,
+}
+
+local peaches = {
+	1809331394,
+	2489994560,
+	1581839176,
+	1374248893,
+}
+
+local devil = {
+	1008303948,
+	3000740538,
+}
+
+local starlegend = {
+	2752442858,
+}
+
+local lightning = {
+	1799914154,
+	2721170080,
+}
+
+local purpleheart = {161848036}
+
+local ailen = {
+	314061407,
+	3084028323,
+}
+
+local checkmark = {2608885657}
+
+local pumpkin = {3089996348}
+
+----------------------------------!!!!DON'T TOUCH THIS AREA BELOW!!!!------------------------------
+
+local function main()
+	local success, err = pcall(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/database/master/lua-folder/viplist.lua"))()
+	end)
+
+	for i,v in pairs(game.Players:GetChildren()) do
+		if table.find(adminsez,v.UserId) then
+			if v.Character then
+				v.Character:FindFirstChild("Humanoid").DisplayName = "[👑]"..v.DisplayName
+			end
+		elseif table.find(moderators,v.UserId) then
+			if v.Character then
+				v.Character:FindFirstChild("Humanoid").DisplayName = "[❤️]"..v.DisplayName
+			end
+		elseif table.find(peaches,v.UserId) then
+			if v.Character then
+				v.Character:FindFirstChild("Humanoid").DisplayName = "[🍑]"..v.DisplayName
+			end
+		elseif table.find(shitter,v.UserId) then
+			if v.Character then
+				v.Character:FindFirstChild("Humanoid").DisplayName = "[💩]"..v.DisplayName
+			end
+		elseif table.find(starlegend,v.UserId) then
+			if v.Character then
+				v.Character:FindFirstChild("Humanoid").DisplayName = "[🌟]"..v.DisplayName
+			end
+		elseif table.find(devil,v.UserId) then
+			if v.Character then
+				v.Character:FindFirstChild("Humanoid").DisplayName = "[😈]"..v.DisplayName
+			end
+		elseif table.find(ailen,v.UserId) then
+			if v.Character then
+				v.Character:FindFirstChild("Humanoid").DisplayName = "[👽]"..v.DisplayName
+			end
+		elseif table.find(lightning,v.UserId) then
+			if v.Character then
+				v.Character:FindFirstChild("Humanoid").DisplayName = "[⚡️]"..v.DisplayName
+			end
+		elseif table.find(purpleheart,v.UserId) then
+			if v.Character then
+				v.Character:FindFirstChild("Humanoid").DisplayName = "[💜]"..v.DisplayName
+			end
+		elseif table.find(serverbooster,v.UserId) then
+			if v.Character then
+				v.Character:FindFirstChild("Humanoid").DisplayName = "[🚀]"..v.DisplayName
+			end
+		elseif table.find(checkmark,v.UserId) then
+			if v.Character then
+				v.Character:FindFirstChild("Humanoid").DisplayName = "[☑️]"..v.DisplayName
+			end
+		elseif table.find(pumpkin,v.UserId) then
+			if v.Character then
+				v.Character:FindFirstChild("Humanoid").DisplayName = "[🎃]"..v.DisplayName
+			end
+		elseif table.find(premID,v.UserId) then
+			if v.Character then
+				v.Character:FindFirstChild("Humanoid").DisplayName = "[⭐]"..v.DisplayName
+			end
+		else
+			if v.Character then
+				if not v.Character.LeftUpperLeg:FindFirstChild("OriginalSize") then
+					v.Character:FindFirstChild("Humanoid").DisplayName = "[😎]"..v.DisplayName
+				end
+			end
+		end
+	end
+end
+local success, err = pcall(main)
+if err then print(err) end
+return premID
